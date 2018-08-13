@@ -4,6 +4,11 @@
 function question0 (array) {
   // Write your code here! Make sure not to modify the function
   // declaration above or the `module.exports` code below
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      console.log(array[i])
+    }
+  }
 }
 
 // Write a for loop that doubles each number in the following array. If the
@@ -13,6 +18,12 @@ function question0 (array) {
 function question1 (array) {
   // Write your code here! Make sure not to modify the function
   // declaration above or the `module.exports` code below
+  for (var i = 0; i < array.length; i++) {
+      if (array[i] * 2 > 12) {
+        console.log(array[i] * 2)
+      }
+  }
+
 }
 
 // Write a for loop to iterate over every element in the following array:
@@ -27,6 +38,25 @@ function question1 (array) {
 function question2 (array) {
   // Write your code here! Make sure not to modify the function
   // declaration above or the `module.exports` code below
+  for (var i = 0; i < array.length; i++) {
+    switch (array[i]) {
+      case 'Sat':
+        console.log('Yay, it\'s the weekend!');
+        break;
+      case 'Sun':
+        console.log('Yay, it\'s the weekend!');
+        break;
+      case 'Fri':
+        console.log('Almost there...');
+        break;
+      case 'Mon':
+        console.log('I hate Mondays more than Garfield.');
+        break;
+      default:
+        console.log('Everybody\'s working for the weekend.');
+        break;
+    }
+  }
 }
 
 module.exports = { question0, question1, question2 }
